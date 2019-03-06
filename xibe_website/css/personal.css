@@ -1,0 +1,137 @@
+.personal_wrap{
+	background: #F0F0F0;
+	padding-bottom: 78px;
+	/*padding-top: 70px;*/
+}
+.personal_wrap .personal_head_img{
+	height: 360px;
+	/*margin: 0 auto;*/
+	/*text-align: center;*/
+	background: url(../images/ph.jpg) 50% 0 no-repeat;
+}
+.personal_wrap .personal{
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+	/*height: 500px;*/
+	border-radius: 8px;
+	box-shadow: 0px 1px 4px #CCCCCC;
+}
+/*.personal_wrap .personal .pu_info{
+	margin-bottom: 30px;
+}*/
+.personal_wrap .personal .pu_info .pu_head{
+	/*padding: 20px;*/
+	width: 120px;
+    border: 5px solid white;
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    top: -65px;
+    left: 20px;
+    box-shadow: 0px 0px 10px #666;
+}
+.personal_wrap .personal .pu_info .pu_name{
+	padding-left: 50px;
+	padding-top: 6px;
+	color: #555555;
+	width: 300px;
+	float: left;
+}
+.personal_wrap .personal .pu_info .pu_name a{
+	background: #57ADFD;
+	border-radius: 8px;
+	padding: 8px;
+	line-height: 50px;
+	color: white;
+	
+}
+.personal_wrap .personal .pu_info .pu_send{
+	float: right;
+	/*height: 100px;*/
+	width: 220px;
+	padding:20px;
+}
+.personal_wrap .personal .pu_info .pu_send a{
+	/*line-height: 50px;*/
+	display: block;
+	color: white;
+	font-size: 20px;
+	background: #57ADFD;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 10px;
+	/*border: none;*/
+}
+.personal_wrap .personal .pu_tab{
+	height: 400px;
+	padding: 20px;
+}
+.personal_wrap .personal .pu_tab .tab_cho{
+	width: 500px;
+}
+.personal .pu_tab .tab_cho ul li{
+	float: left;
+	width: 120px;
+	cursor: pointer;
+	text-align: center;
+}
+.personal .pu_tab .tab_cho span{
+	font-size: 20px;
+	line-height: 50px;
+}
+.tab_con .pu_tab_css{
+	margin:20px 10px;
+}
+.tab_con .pu_tab_css .us_infomation th{
+	padding-top: 9px;
+    padding-right: 5px;
+    width: 130px;
+}
+.tab_con .pu_tab_css .us_infomation td{
+	vertical-align: top;
+    padding: 7px 0;
+}
+.tab_con .pu_tab_css .us_infomation td input{
+	margin: 0 5px 0 10px;
+}
+.tab_con .pu_tab_css .us_infomation .pwd_set input{
+	padding: 6px;
+	margin: 6px;
+	width: 270px;
+}
+.tab_con .pu_tab_css .us_infomation .save_per{
+	text-align: center;
+	width: 400px;
+	margin-top: 30px;
+}
+.tab_con .pu_tab_css .us_infomation .save_per button{
+	/*border: none;*/
+	background: #54A0EC;
+    border: #4988CB 1px solid;
+    border-radius: 3px;
+    height: 30px;
+    color: white;
+    width: 70px;
+	margin-right: 30px
+}
+.tab_con .pu_tab_css .us_infomation .save_per a{
+	background:#54A0EC;
+	padding:4px 20px;
+	color:white;
+	border-radius:3px;
+	border: #4988CB 1px solid;
+}
+.tab_con .pu_tab_css .us_article ul li{
+	line-height:24px;
+	padding:10px 100px 5px 20px;
+}
+.tab_con .pu_tab_css .us_article span{
+	color:#555;
+	font-size:16px;
+	float:left;
+}
+.tab_con .pu_tab_css .us_article a{
+	float:right;
+	color:#57adfd;
+}

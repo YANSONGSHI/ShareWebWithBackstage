@@ -1,0 +1,149 @@
+body{
+	/*height: 2000px;*/
+	background: #F0F0F0;
+}
+.postbar_wrap{
+	padding-bottom: 78px;
+}
+.postbar_wrap .postbar{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 90px;
+}
+.postbar .bar_left{
+	/*border: 1px solid yellow;*/
+	width: 660px;
+	/*height: 900px;*/
+	float: left;
+	border-radius: 10px;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	background: white;
+	padding: 10px;
+}
+.postbar .bar_left .classify{
+	height: 100px;
+}
+.postbar .bar_left .classify ul li{
+	float: left;
+	width: 76px;
+	height: 80px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: bold;	
+}
+.postbar .bar_left .classify ul li a{
+	color: #69707A;	
+	font-size: 16px;
+	font-weight: bold;
+}
+.postbar .bar_left .classify ul li a span{
+	display: block;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background-size: 35px 35px;
+}
+.postbar .bar_left .user_post_bar p{
+	color: #5A5A5A;
+	font-size: 18px;
+	padding: 10px 20px;
+	font-weight: bold;
+	border-bottom: 1px solid #CCCCCC;
+}
+.postbar .bar_left .user_post_bar .user_p{
+	margin-top: 20px;
+}
+.postbar .bar_left .user_post_bar .user_p li{
+	border-bottom: 1px dashed #CCCCCC;
+}
+.postbar .bar_left .user_post_bar .user_img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	float: left;
+	padding: 20px 10px;
+}
+.postbar .bar_left .user_post_bar .user_img img{
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+}
+.postbar .bar_left .user_post_bar .user_title{
+	/*border: 1px solid green;*/
+	float: left;
+	padding-top: 16px;
+	padding-left: 8px;
+	width: 570px;
+}
+.postbar .bar_left .user_post_bar .user_title h2 a{
+	/*float: left;*/
+	color: #5A5A5A;
+	font-size: 20px;
+}
+.postbar .bar_left .user_post_bar .user_title h2 a:hover{
+	color: #57ADFD;
+}
+.postbar .bar_left .user_post_bar .user_id{
+	/*border: 1px solid pink;*/
+	/*float: left;*/
+	/*height: 30px;*/
+	padding-top: 10px;
+}
+.postbar .bar_left .user_post_bar .user_id a{
+	color: #57ADFD;
+}
+.postbar .bar_left .user_post_bar .user_id span{
+	float: right;
+}
+.postbar .bar_right{
+	/*border: 1px solid yellow;*/
+	/*height: 600px;*/
+	float: right;
+	width: 290px;
+}
+.postbar .bar_right .info_hot{
+	/*border: 1px solid green;*/
+	/*height: 400px;*/
+	background: white;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.postbar .bar_right p{
+	color: #5A5A5A;
+	font-size: 16px;
+	padding: 12px;
+	border-bottom: 1px solid #CCCCCC;
+}
+ /*.info_hot{*/
+	/*border: 1px solid blue;*/
+	/*height: 500px;*/
+	/*background: white;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	margin-top: 30px;
+	padding: 16px;
+}*/
+.info_hot_list{
+	/*border-top: 2px solid #CCCCCC;*/
+	padding-top: 10px;
+	/*height: 300px;*/
+}
+.info_hot_list ul li{
+	color: #3D4044;
+	/*font-size: 16px;*/
+	padding: 8px 10px;
+}
+.info_hot_list ul li a{
+	color: #3D4044;
+	/*font-size: 16px;*/
+	line-height: 20px;
+	/*margin: 20px;*/
+}
+.info_hot_list ul li a:hover{
+	color: #57ADFD;
+}

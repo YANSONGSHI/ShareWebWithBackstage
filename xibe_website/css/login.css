@@ -1,0 +1,104 @@
+body{
+	/*height: 1000px;*/
+	/*background: #F0F0F0;*/
+	background: url(../images/bg02.jpg) no-repeat;
+	/*background-size: 1360px 550px;*/
+}
+ul li{
+	list-style: none;
+}
+.u_login_wrap{
+	padding-top: 110px;
+	height: 600px;
+}
+.u_login .w_name{
+	/*border: 1px solid green;*/
+	padding-bottom: 22px;
+}
+.u_login .w_name .logo_img{
+	width: 160px;
+	/*height: 50px;*/
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.u_login_wrap .u_login .w_name h3{
+	font-size: 32px;
+	color: #555555;
+	/*color: white;*/
+	/*color: #ff425d;*/
+	text-align: center;
+	padding-top: 20px;
+	font-family: "华文行楷","楷体";
+}
+.u_login .u_tab{
+	/*height: 500px;*/
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 1px 7px #bcbcbc;
+}
+.u_login .u_tab .tab_cho{
+	/*border: 1px solid brown;*/
+	/*float: left;*/
+	background: white;
+}
+.u_login .u_tab .tab_cho ul{
+	/*width: 270px;*/
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+.u_login .u_tab .tab_cho ul li{
+	width: 200px;
+	float: left;
+	cursor: pointer;
+}
+.u_tab .tab_cho span{
+	color: #3F4347;
+	font-size: 20px;
+	line-height: 50px;
+}
+.u_login .u_tab .tab_con{
+	/*border: 1px solid skyblue;*/
+	/*height: 200px;*/
+	background: white;
+	padding: 40px;
+}
+.tab_con form{
+	margin: 10px;
+}
+.tab_con label{
+	font-size: 16px;
+	color: #3F4347;
+}
+.tab_con input{
+	/*border: none;*/
+	margin-bottom: 20px;
+	padding-left: 10px;
+	width: 200px;
+	height: 34px;
+}
+.tab_con button{
+	border: none;
+	border-radius: 10px;
+	background: #57ADFD;
+	color: white;
+	width: 200px;
+	height: 50px;
+	margin: 16px 50px;
+	font-size: 20px;
+	cursor: pointer;
+	box-shadow: 0 1px 7px #bcbcbc;
+}
+.font_wram a{
+	color: #3D4044;
+	font-size: 12px;
+}
+.font_wram #font_r{
+	float: right;
+}
+.font_wram p{
+	color: #555555;
+	font-size: 12px;
+	/*margin: 0 auto;*/
+	text-align: center;
+}

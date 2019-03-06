@@ -1,0 +1,296 @@
+body{
+	background: #F0F0F0;
+	
+}
+.find_wrap{
+	padding-bottom: 78px;
+	height: 1760px;
+}
+/*发现模块最上方图片*/
+.find_wrap .find{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+/*左边区域*/
+.find .find_left{
+	height: 330px;
+	width: 762px;
+	float: left;
+}
+/*对ul li进行样式设置*/
+.find .find_left ul li{
+	float: left;
+	width: 254px;
+	height: 165px;
+	overflow: hidden;
+    position: relative;
+}
+/*对图片规定宽度 
+ * 让不同大小的图片在div中居中*/
+.find .find_left ul li img{
+	height: 165px;
+	margin-left: -16px;
+}
+/*覆盖在图片上方的一层样式*/
+.find .find_left .cover{
+	position: absolute;
+    width: 194px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+    top: 0;
+    left: 0;
+    padding: 58px 30px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+.find .find_left .cover a{
+	color: #fff;
+    font-size: 20px;
+}
+/*右边区域*/
+.find .find_right{
+	height: 330px;
+	width: 238px;
+	float: right;
+}
+/*列表选择区域*/
+.find_wrap .find_list_wrap{
+	height: 100px;
+	background: white;
+	box-shadow: #ccc 0 5px 5px;
+    margin-bottom: 20px;
+}
+.find_wrap .find_list{
+	width: 1000px;
+	margin: 0 auto;
+	height: 100px;
+}
+/*对dl进行样式定义*/
+.find_list dl{
+	float: left;
+    padding: 16px 36px;
+    color: #686868;
+}
+.find_list dl dd{
+	float: left;
+}
+.find_list dl dt{
+	font-size: 24px;
+    color: #686868;
+    font-weight: normal;
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+/*鼠标移过时有下划线*/
+.find_list a dl:hover{
+	border-bottom: #65BEE7 4px solid;
+}
+/*推荐文章部分样式*/
+.find_wrap .re_article{
+	width: 1000px;
+	margin: 0 auto;
+	height: 1000px;
+}
+.find_wrap .re_article .hot_art{
+	/*height: 500px;*/
+	background: #FFFFFF;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	border-radius: 4px;
+}
+.re_article .hot_art .join_left{
+	/*border: 1px solid red;*/
+	height: 450px;
+	width: 680px;
+	float: left;
+}
+.re_article .hot_art .join_left img{
+	width: 680px;
+	height: 238px;
+}
+.re_article .hot_art .join_left .join_conten{
+	margin: 40px;
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.re_article .hot_art .join_left .join_conten a{
+	color: black;
+	font-size: 20px;
+	/*text-align: center;*/
+}
+.re_article .hot_art .join_left .join_conten p{
+	font-size: 16px;
+	padding-top: 20px;
+	color: #3D4044;
+	line-height: 24px;
+	/*text-decoration: none;*/
+}
+.re_article .hot_art .join_right{
+	/*border: 1px solid red;*/
+	/*height: 200px;*/
+	width: 318px;
+	float: right;
+}
+.re_article .hot_art .join_right .right_title p{
+	color: #555555;
+	font-size: 16px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.re_article .hot_art .join_right .right_list .bg_list{
+	background: #e5e5e5;
+	width:298px;
+	height: 64px;
+	padding: 10px;
+}
+.re_article .hot_art .join_right .right_list .bg_list img{
+	width: 160px;
+	height: 58px;
+	float: left;
+	/*padding: ;*/
+}
+.re_article .hot_art .join_right .right_list .bg_list span{
+	color: #3D4044;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0 10px;
+	float: right;
+	width: 110px;
+}
+.re_article .hot_art .join_right .right_list ul li{
+	padding: 15px;
+	font-weight: bold;
+	color: #686868;
+}
+/*热门文章内容页面 包括列表*/
+.find_wrap .re_article .hot_con{
+	/*height: 900px;*/
+	margin-top: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 1px 1px #d2d2d2;
+	border-radius: 4px;
+	padding: 20px;
+}
+/*左部分*/
+.re_article .hot_con .hot_con_left{
+	float: left;
+	width: 630px;
+	/*border: 1px solid red;*/
+	/*height: 850px;*/
+}
+/*左部分顶部与底部*/
+.hot_con .hot_con_left .l_top{
+	/*border: 1px solid yellow;*/
+	/*height: 500px;*/
+}
+.hot_con .hot_con_left .l_bottom{
+	/*border: 1px solid green;*/
+	margin-top: 20px;
+}
+/*顶部区域中的最上方*/
+.hot_con .hot_con_left .l_top .l_top_top{
+	/*border: 1px solid black;*/
+	/*height: 200px;*/
+}
+/*标题*/
+.hot_con  .top_title{
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+}
+.hot_con  .top_title p{
+	color: #7B7B7B;
+	font-size: 16px;
+	padding: 10px 0;
+}
+/*图片文字简介*/
+.hot_con_left  .top_content img{
+	height: 105px;
+	width: 300px;
+	padding-bottom: 14px;
+	/*padding-top: 10px;*/
+}
+.hot_con_left .l_top .l_top_top .top_content span{
+	float: right;
+	font-weight: normal;
+	padding-top: 6px;
+}
+.hot_con_left .l_top .l_top_top .top_content p{
+	float: right;
+	width: 314px;
+	height: 105px;
+	overflow: hidden;
+	font-size: 17px;
+	color: #7B7B7B;
+	font-weight: bold;
+	/*padding-top: 10px;*/
+}
+/*列表*/
+.hot_con .hot_con_left  ul li{
+	padding: 7px 0;
+}
+.hot_con .hot_con_left  ul li a{
+	color: #555;
+}
+/*内容区域里面分了两块,左右部分*/
+.hot_con .hot_con_left .l_bom_left{
+	width: 300px;
+	float: left;
+}
+.hot_con .hot_con_left .l_bom_right{
+	width: 300px;
+	float: right;
+}
+/*左边下半部分的图片与文字*/
+.hot_con_left .l_bottom .l_bom_left .top_content a:hover{
+	color: #66B3FF;
+}
+.hot_con_left .l_bottom .l_bom_right .b_act ul li{
+	float: left;
+	width: 148px;
+	height: 100px;
+	overflow: hidden;
+    position: relative;
+    padding: 2px 0;
+    border-radius: 2px;
+}
+.hot_con_left .l_bottom .l_bom_right .b_act ul li img{
+	height: 100px;
+	margin-left: -60px;
+	border-radius: 2px;
+}
+/*右部分*/
+.re_article .hot_con .hot_con_right{
+	float: right;
+	width: 300px;
+	/*border: 1px solid black;*/
+}
+.hot_con .hot_con_right .user_fashion dl dt{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    /*float: left;*/
+    /*padding: 2px 0;
+    border-radius: 2px;*/
+}
+.hot_con .hot_con_right .user_fashion dl dt img{
+	height: 50px;
+	border-radius: 6px;
+}
+.hot_con .hot_con_right .user_fashion dl dd{
+	float: left;
+	margin: 5px 14px;
+	color: #57ADFD;
+	font-size: 16px;
+}
+.hot_con .hot_con_right .user_fashion dl dd a{
+	font-size: 17px;
+	color: #57ADFD;
+}

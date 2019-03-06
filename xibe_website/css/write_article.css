@@ -1,0 +1,96 @@
+.create_article_wrap{
+	background: #F0F0F0;
+	padding-bottom: 78px;
+	padding-top: 100px;
+}
+.create_article_wrap .create_article{
+	width: 1000px;
+	/*height: 100px;*/
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0px 1px 4px #CCCCCC;
+	border-radius: 8px;
+}
+.create_article_wrap .create_article .ca_send_art{
+	padding: 20px;
+}
+.create_article .ca_send_art a{
+	color: #555555;
+	font-size: 16px;
+}
+.create_article .ca_send_art .ac_content{
+	margin-top: 30px;
+}
+.create_article .ca_send_art .ac_content .in_title{
+	height: 50px;
+	/*margin: 0 auto;*/
+	text-align: center;
+	color: #999;
+	border-bottom: 2px solid #CCCCCC;
+}
+.create_article .ca_send_art .ac_content .in_title input{
+	border: none;
+    width: 620px;
+    padding: 0;
+    height: 46px;
+    line-height: 46px;
+    font-size: 22px;
+    color: #999;
+    font-weight: bold;
+    text-align: center;
+	outline:none;
+}
+.create_article .ca_send_art .ac_content .in_sel{
+	/*height: 50px;
+	padding: 10px 20px;
+	text-align: center;*/
+	color: #555;
+	border:none;
+	font-size:16px;
+	padding:2px 10px;
+	width:110px;
+}
+.create_article .ca_send_art .ac_content .in_text{
+	/*text-align: center;*/
+	margin:0 20px;
+	border:1px solid #ccc;
+}
+.create_article .ca_send_art .ac_content .in_text textarea{
+	padding:14px;
+	float:left;
+	color:#333;
+	font-size:16px;
+	line-height:24px;
+	outline:none;
+	border:none;
+	border-right:2px solid #ccc;
+}
+.create_article .ca_send_art .ac_content .in_text .up_img{
+	height:400px;
+	width:300px;
+	float:right;
+}
+.create_article .ca_send_art .ac_content .in_upload{
+	background:#eee;
+	margin:20px 20px 0 20px;
+	height:50px;
+	border:1px solid #ccc;
+}
+.create_article .ca_send_art .ac_content .in_upload .up_input{
+	padding-top:10px;
+	text-align:center;
+}
+.create_article .ca_send_art .ac_content .in_btn{
+	/*height:50px;*/
+	margin:20px;
+	text-align:center;
+	padding-top:10px;
+}
+.create_article .ca_send_art .ac_content .in_btn button{
+	margin:0 20px;
+	border:none;
+	background:#54A0EC;
+	border-radius:4px;
+	line-height:32px;
+	color:white;
+}

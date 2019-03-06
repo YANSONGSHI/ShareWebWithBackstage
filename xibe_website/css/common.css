@@ -1,0 +1,481 @@
+*{
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+ul{
+	list-style: none;
+}
+body{
+	/*background: #F0F0F0;*/
+	/*height: 2000px;*/
+}
+.f_clear{
+	/*清除浮动,使之占位*/
+	clear: both;
+}
+/*头部导航栏外套,
+ * 不定义宽度能够适应屏幕大小
+ *定位在头部
+ */
+.head_wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 1px 4px #ccc;
+	z-index: 111;
+	overflow: hidden;
+	width: 100%;
+	height: 70px;
+	background: white;
+	/*border: 1px solid black;*/
+}
+.head{
+	width: 1000px;
+	height: 70px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.head_wrap .head .head_logo{
+	/*margin: auto 0;*/
+	/*border: 1px solid yellow;*/
+	width: 110px;
+	height: 70px;
+	padding: 10px 0;
+	float: left;
+}
+.head_wrap .head .head_bar{
+	/*border: 1px solid black;*/
+	float: left;
+	height: 70px;
+	width: 500px;
+	text-align: center;
+}
+.head_wrap .head .head_bar ul{
+	padding: 26px 42px;
+}
+.head_wrap .head .head_bar ul li{
+	float: left;
+	/*margin: auto 0;*/
+	/*text-align: center;*/
+}
+.head .head_bar a{
+	font-size: 16px;
+	color: #3d4044;
+	padding: 10px 16px;
+	/*text-align: center;*/
+}
+.head .head_bar a:hover{
+	color: #66B3FF;
+}
+.head .head_ser{
+	/*border: 1px solid darkblue;*/
+	float: right;
+	width: 370px;
+	height: 70px;
+	/*padding: 40px 10px;*/
+} 
+.head .head_ser .ser_bar{
+	margin-top: 22px;
+	border-radius: 14px;
+	border: 1px solid darkgray;
+	float: left;
+	width: 200px;
+	/*height: 30px;*/
+}
+.head .head_ser .ser_bar .search{
+	float: left;
+	width: 150px;
+	padding: 4px;
+	font-size: 12px;
+	margin-left:12px ;
+	border: none;
+	outline: none;
+}
+.head .head_ser .s_ser{
+	/*border: 1px solid gold;*/
+	width: 30px;
+	height: 26px;
+	background: url(../images/search.png) no-repeat 5% 49%;
+	float: left;
+    display: block;
+    text-indent: -1000px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    color: #3d4044;
+    background-size: 20px;
+}
+.head .head_ser .head_login a{
+	display: block;
+    position: relative;
+    float: left;
+    margin-left: 50px;
+    margin-top: 22px;
+    border-radius: 14px;
+    padding: 0 12px;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    background-color: #57adfd;
+    color: #fff;
+    font-size: 14px;
+}
+/*底部区域*/
+.foot_wrap{
+	/*border: 1px solid yellow;*/
+	height: 240px;
+	background: #2e2e2e;
+}
+.foot_wrap .foot{
+	height: 180px;
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 20px
+}
+.foot_wrap .foot .bottom_info{
+	width: 140px;
+    padding: 20px 0;
+    border-right: 1px solid #393939;
+    float: left;
+    margin-right:46px ;
+}
+.foot_wrap .foot .bottom_info p{
+	color: white;
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.foot_wrap .foot .bottom_info ul li{
+	color: #b4b4b4;
+	padding-bottom: 5px;
+}
+.foot_wrap .foot .bottom_info_social{
+	float: left;
+	/*border: 1px solid;*/
+    /*height: 150px;*/
+    padding: 20px 0;
+    text-align: center;
+    
+}
+.foot_wrap .foot .bottom_info_social ul li span{
+	color: #b4b4b4;
+	padding: 0 0 2px 6px;
+	float: right;
+}
+.foot_wrap .foot .code_QR{
+	float: right;
+	padding: 20px;
+}
+.foot_bottom_wrap{
+	background: #282828;
+}
+.foot_bottom_wrap .foot_bottom{
+	height: 40px;
+	width: 960px;
+	margin: 0 auto;
+}
+.foot_bottom_wrap .foot_bottom p{
+	text-align: center;
+	color: #f2f2f2;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.fen_page{
+	text-align:center;
+	height:30px;
+	padding: 30px 30px 10px;
+}
+.fen_page a{
+	padding:6px 12px;
+	margin-top:5px;
+	line-height:30px;
+	background:#555;
+	color:white;
+}
+
+/*点赞*/
+.text-content{
+    min-width:1180px;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    background: #f4f4f4;
+}
+.text-content h1{
+    text-align:center;
+    font-size: 20px;
+    padding-top: 50px;
+    color: #EB4F38;
+}
+.text-content p{
+    padding: 10px 100px 40px 100px;
+    clear: both;
+    color: #333;
+    display: block;
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    outline: medium none;
+    position: relative;
+    width: 900px;
+    word-wrap: break-word;
+}
+/*动态点赞开始*/
+.praise{
+    width:30px;
+    height:30px;
+   margin: 20px auto;
+	cursor: pointer;
+    font-size: 12px;
+    text-align:center;
+    position: relative;
+}
+#praise{
+    display:block;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+	border-radius: 20px;	
+}
+#praise-txt{
+    height:25px;
+    line-height:25px;
+    display: block;
+}
+.praise img{
+    width:30px;
+    height:30px;
+    display:block;
+    margin: 0 auto;
+}
+.praise img.animation{
+    animation: myfirst 0.5s;
+    -moz-animation: myfirst 0.5s;	/* Firefox */
+    -webkit-animation: myfirst 0.5s;	/* Safari 和 Chrome */
+    -o-animation: myfirst 0.5s;	/* Opera */
+}
+#add-num{
+    display:none;
+}
+#add-num .add-animation{
+    color: #000;
+    position:absolute;
+    top:-15px;
+    left: 10px;
+    font-size: 15px;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -moz-opacity:0;
+    animation: mypraise 0.5s ;
+    -moz-animation: mypraise 0.5s ;	/* Firefox */
+    -webkit-animation: mypraise 0.5s ;	/* Safari 和 Chrome */
+    -o-animation: mypraise 0.5s ;	/* Opera */
+    font-style:normal;
+}
+.praise .hover , #add-num .add-animation.hover , #praise-txt.hover{
+    color: #EB4F38;
+}
+
+/*点赞图标放大动画开始*/
+@keyframes myfirst
+{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:35px;
+        height:35px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:35px;
+        height:35px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:35px;
+        height:35px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:35px;
+        height:35px;
+    }
+    100% {
+        width:30px;
+        height:30px;
+    }
+}
+/*点赞图标放大动画结束*/
+/*点赞数量加减动画开始*/
+@keyframes mypraise
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-moz-keyframes mypraise /* Firefox */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-webkit-keyframes mypraise /* Safari 和 Chrome */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+
+@-o-keyframes mypraise /* Opera */
+{
+    0%{
+        top:-15px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+    25%{
+        top:-20px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    50%{
+        top:-25px;
+        opacity: 1;
+        filter: Alpha(opacity=100);
+        -moz-opacity:1;
+    }
+    75%{
+        top:-30px;
+        opacity: 0.5;
+        filter: Alpha(opacity=50);
+        -moz-opacity:0.5;
+    }
+    100% {
+        top:-35px;
+        opacity: 0;
+        filter: Alpha(opacity=0);
+        -moz-opacity:0;
+    }
+}
+/*点赞数量加减动画结束*/
+/*动态点赞结束*/

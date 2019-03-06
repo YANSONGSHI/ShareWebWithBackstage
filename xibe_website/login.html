@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="css/Global.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<script type="text/javascript" src="js/jquery.1.4.4.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</head>
+	<body>
+		<!-- 
+			全局字体：微软雅黑  ,  字体大小：14px
+			头部区域，logo以及网站名称
+			
+		-->
+		<div class="all">
+		<!-- 头部导航栏  -->
+			<div class="head_wrap">
+				<div class="head">
+					<!--导航条logo图标-->
+					<div class="head_logo">
+						<a href="index.php"><img src="images/logo.png"/></a>
+					</div>
+					<!--导航条菜单-->
+					<div class="head_bar">
+						<ul>
+							<li><a href="index.php">首页</a></li>
+							<li><a href="found_page.html">发现</a></li>
+							<li><a href="community.html">社区</a></li>
+							<li><a href="information.html">资讯</a></li>
+							<li><a href="app_load.html">APP下载</a></li>
+						</ul>
+					</div>
+					<!--导航条搜索框-->
+					<div class="head_ser">
+						<div class="ser_bar">
+							<input class="search" type="text" placeholder="搜索文章、帖子、用户" />
+							<button type="submit" class="s_ser"></button>
+						</div>
+						<!--导航条登录按钮-->
+						<div class="head_login">
+							<a href="login.html">登&nbsp;录</a>
+							<a href="login.html" style="background: none; color: #000;margin-left: 0px;" class="re">注&nbsp;册</a>
+						</div>
+					</div>
+				</div><!--end head-->
+			</div>
+			<!--登录页卡-->
+			<div class="u_login_wrap">
+				<div class="u_login">
+					<!--网站名称大标题与该网站座右铭-->
+					<div class="w_name">
+						<!--<div class="logo_img">
+							<a href="index.html">
+							 	<img src="images/loginMsg.png" width="160px"/>   
+							</a>
+							
+						</div>-->
+						<!--<h3>我们不生产物品，我们只是美好事物的分享者</h3>-->
+						<h3>喜碧，分享精致生活</h3>
+					</div>
+					<!--登录注册页卡切换-->
+					<div class="u_tab">
+						<div class="tab_cho">
+							<ul>
+								<li id="tab1" class="eee">
+									<span>登录</span>
+								</li>
+								<li id="tab2" class="eee" style="background: #57ADFD;">
+									<span style="color: #FFF;">注册</span>
+								</li>
+							</ul>
+						</div>
+						<!--清除浮动-->
+						<div class="f_clear"></div>
+						<div class="tab_con">
+							<div class="tab_css" id="tab1_content" >
+								<div id="login">
+									<form action="" method="post" name="loginForm">
+										<label>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</label>
+										<input type="text" placeholder="请输入用户名" name="uname" /><br />
+										<label> 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+										<input type="password" placeholder="请输入密码" name="pwd"/><br />
+										<!--<input type="button" value="立即登录" />-->
+										<button type="submit"  onclick = "return loginCheck(loginForm.uname.value, loginForm.pwd.value);">立即登录</button>
+									</form>
+									<div class="font_wram">
+										<a href="#">使用社交软件登录</a>
+										<a id="font_r" href="#">无法登录?</a>
+									</div>
+								</div><!--end login-->
+							</div>
+							<div class="tab_css" id="tab2_content" style="display: none">
+								<div id="register">
+									<form action="" method="post" name="regForm">
+										<label>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号：</label>
+										<input type="text" placeholder="不少于3个字符" name="uname"/><br />
+										<label> 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+										<input type="password" placeholder="请输入密码" name="pwd"/><br />
+										<label> 确认密码：</label>
+										<input type="password" placeholder="请再次输入密码" name="repwd"/><br />
+										<!--<input type="button" value="注册" />-->
+										<button type="submit" onclick="return check(regForm.uname.value, regForm.pwd.value, regForm.repwd.value);">注&nbsp;&nbsp;册</button>
+									</form>
+									<div class="font_wram">
+										<p>点击注册按钮即代表你同意<a href="#">《喜碧分享网站》</a>协议</p>
+									</div>
+								</div><!--end register-->
+							</div>
+						</div><!--end tab_con-->
+					</div><!--end u_tab-->
+				</div><!--end u_login-->
+				
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	//注册页面
+	function check(name,pwd,repwd){
+		//三个值不等于空的时候
+		if(name!='' && pwd!='' && repwd!=''){
+			//判断第一个用户名的长度是否在6位到10位之间
+			if(name.length<3||name.length>6){
+					alert('用户名长度不符合要求');
+				}else{
+					//对比密码和二次密码是否一致
+					if(pwd==repwd){
+						//如果以上都可以，检测是否存在这个用户名
+							$.ajax({
+								type:'POST',
+								url:'php/regAjax.php?name='+name+'&pwd='+pwd+'&repwd='+repwd,
+								success:function(msg){
+									//alert(1);
+									if(msg==1){
+										//如果成功，跳转到登录页
+										alert("注册成功");
+										window.location.href="login.html";
+									}else{
+										//如果不成功，提示用户
+										alert(msg);
+									}
+								}
+							});
+						}else{
+							alert('两次输入密码不一样');
+						}
+					}
+			}
+		return false;
+	}
+	
+	//登录页面
+	function loginCheck(name, pwd){
+		if(name != '' && pwd != ''){
+			$.ajax({
+				type:'POST',
+				url:'php/loginAjax.php?name='+name+'&pwd='+pwd,
+				success:function (msg)
+				{
+					if(msg == 1){
+						alert('登录成功');
+						window.location.href = "index.php";
+					}else{
+						alert(msg);
+					}
+				}
+			});
+		}
+		return false;
+	}
+	
+	
+	
+</script>
